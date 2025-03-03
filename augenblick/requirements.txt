@@ -1,0 +1,32 @@
+# Core data processing
+pandas
+numpy
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Causal inference libraries
+dowhy
+econml
+causalml
+
+# Web application
+flask
+streamlit
+
+# Testing
+pytest
+
+# Additional dependencies
+statsmodels
+jupyter
+nbformat
+openpyxl
+ipykernel
+networkx
+graphviz
+kaleido
+scipy
