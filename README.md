@@ -1,95 +1,86 @@
 # Causal Inference Project
 
-This project implements causal inference analysis with a FastAPI backend and React frontend.
+This project implements a causal inference analysis pipeline for healthcare data, with a focus on estimating treatment effects using propensity score methods and inverse probability weighting (IPW). It includes interactive dashboards and what-if analysis tools to help users explore, visualize, and validate the causal effects of interventions.
 
-## Prerequisites
+# Causal Inference Analysis: IHDP Dataset
+## 📊 Project Overview
 
-- Python 3.8 or higher
-- Node.js 16 or higher
-- npm or yarn
+An interactive causal inference analysis tool that estimates the impact of specialized childcare interventions on infants' cognitive outcomes using the Infant Health and Development Program (IHDP) dataset. This project combines advanced causal inference techniques with an intuitive web interface for exploring and understanding treatment effects.
 
-## Setup Instructions
+![Screenshot 2025-03-06 155348](https://github.com/user-attachments/assets/ea8b0307-de3d-4c1b-bba7-f73988fe7969)
+![Screenshot 2025-03-06 155359](https://github.com/user-attachments/assets/32f062df-2b34-4399-84c1-eede6846b627)
 
-### Backend Setup
+## 🎯 Key Features
 
-```bash
-# Navigate to backend directory
-cd BACK
+- **Interactive Dashboard** built with Streamlit
+- **Multiple Causal Inference Methods**:
+  - Propensity Score Matching (PSM)
+  - Inverse Probability Weighting (IPW)
+- **Real-time What-if Analysis**
+- **Dynamic Visualization** of treatment effects
+- **Comprehensive Statistical Reports**
 
-# Create virtual environment
-python -m venv venv
+## 🔧 Technologies Used
 
-# Activate virtual environment
-# On Windows:
-.\venv\Scripts\activate
-# On Unix/MacOS:
-source venv/bin/activate
+- Python 3.12
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+- Plotly
+- Statsmodels
 
-# Install dependencies
-pip install -r requirements.txt
+## 📈 Dataset Information
 
-# Start the FastAPI server
-uvicorn app:app --reload --port 5000
-```
+The IHDP dataset contains:
+- 747 samples
+- 25 pre-intervention covariates
+- Treatment variable (specialized childcare intervention)
+- Outcome variable (cognitive test scores at age 5)
 
-### Frontend Setup
 
-```bash
-# Navigate to frontend directory
-cd Front
+## 📊 Features & Screenshots
 
-# Install dependencies
-npm install
+### 1. Propensity Score Analysis
+![Screenshot 2025-03-06 155412](https://github.com/user-attachments/assets/e14b62fc-8814-4468-bc11-dd1988a6bb32)
+![Screenshot 2025-03-06 155429](https://github.com/user-attachments/assets/920e6144-a80d-4daf-a3bf-dccf58487403)
 
-# Start development server
-npm run dev
-```
+### 2. Treatment Effect Estimation
+![Treatment Effects](assets/treatment-effects.png)
 
-## Environment Variables
+### 3. Covariate Balance
+![Screenshot 2025-03-06 160653](https://github.com/user-attachments/assets/f0a67ea7-d370-44eb-bc6f-3cb9a074975e)
 
-### Backend (.env in BACK directory)
-- DATASET_PATH: Path to the IHDP dataset
-- PORT: Server port (default: 5000)
-- DEBUG: Debug mode (True/False)
-- CORS_ORIGINS: Allowed CORS origins
+### 4. What-if Simulation
+![Simulation Interface](assets/simulation.png)
 
-### Frontend (.env in Front directory)
-- VITE_API_URL: Backend API URL
-- VITE_NODE_ENV: Development environment
+## 🔍 Methodology
+![Screenshot 2025-03-06 160351](https://github.com/user-attachments/assets/1f71aa87-3d49-4a09-a4d1-0dc674e1f46c)
 
-## Project Structure
 
-```
-causal_inference/
-├── BACK/
-│   ├── venv/
-│   ├── app.py
-│   ├── causal_model.py
-│   ├── requirements.txt
-│   └── ihdp_data.csv
-├── Front/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   └── package.json
-└── README.md
-```
+1. **Data Preprocessing**
+   - Cleaning and validation
+   - Feature engineering
+   - Missing value handling
 
-## Available Scripts
+2. **Causal Analysis**
+   - Propensity score estimation
+   - Matching algorithms
+   - Treatment effect calculation
+   - Sensitivity analysis
 
-### Backend
-- `uvicorn app:app --reload`: Start development server
-- `pytest`: Run tests
+3. **Visualization & Reporting**
+   - Interactive plots
+   - Statistical summaries
+   - Real-time analysis updates
 
-### Frontend
-- `npm run dev`: Start development server
-- `npm run build`: Build for production
-- `npm run preview`: Preview production build
+## 📈 Results
 
-## API Documentation
+![Results Summary](assets/results-summary.png)
 
-Once the backend server is running, visit:
-- Swagger UI: http://localhost:5000/docs
-- ReDoc: http://localhost:5000/redoc 
+Our analysis shows:
+- Estimated Average Treatment Effect (ATE)
+- Confidence intervals
+- Subgroup analyses
+- Sensitivity measures
+
