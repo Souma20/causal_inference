@@ -46,7 +46,7 @@ The IHDP dataset contains:
 ![Screenshot 2025-03-06 155429](https://github.com/user-attachments/assets/920e6144-a80d-4daf-a3bf-dccf58487403)
 
 ### 2. Treatment Effect Estimation
-![Treatment Effects](assets/treatment-effects.png)
+![Screenshot 2025-03-06 161346](https://github.com/user-attachments/assets/192ae9fb-a850-4c1c-ae18-c37bdfd1527f)
 
 ### 3. Covariate Balance
 ![Screenshot 2025-03-06 160653](https://github.com/user-attachments/assets/f0a67ea7-d370-44eb-bc6f-3cb9a074975e)
