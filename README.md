@@ -73,9 +73,6 @@ The IHDP dataset contains:
    - Real-time analysis updates
 
 ## 📈 Results
-
-![Results Summary](assets/results-summary.png)
-
 Our analysis shows:
 - Estimated Average Treatment Effect (ATE)
 - Confidence intervals
