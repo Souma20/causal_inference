@@ -52,11 +52,9 @@ The IHDP dataset contains:
 ![Screenshot 2025-03-06 160653](https://github.com/user-attachments/assets/f0a67ea7-d370-44eb-bc6f-3cb9a074975e)
 
 ### 4. What-if Simulation
-![Simulation Interface](assets/simulation.png)
-
-## 🔍 Methodology
 ![Screenshot 2025-03-06 160351](https://github.com/user-attachments/assets/1f71aa87-3d49-4a09-a4d1-0dc674e1f46c)
 
+## 🔍 Methodology
 
 1. **Data Preprocessing**
    - Cleaning and validation
